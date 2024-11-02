@@ -1,0 +1,575 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    }
+    
+    header {
+    background-color: #111827;
+    color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    
+    }
+    .giohangicon{
+        color:white;
+    }
+    
+    .headercontent {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding:10px;
+    max-width: 1200px; /* Đặt giá trị tối đa cho chiều rộng */
+    margin: 0 auto;    /* Căn giữa cả menu */
+    padding: 10 20px;   /* Tạo khoảng cách đều hai bên khi zoom */
+    
+    }
+    
+    .danhmuc {
+    position: relative;
+    cursor: pointer;
+    border-radius: 24px;
+    background-color: #374151;
+    margin-left: 20px;
+    
+    }
+    
+    .danhmuc span {
+    padding: 15px;
+    display: inline-block;
+    font-size: 20px;
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+    overflow: visible;
+    left: 0;
+    top: 100%;
+    }
+    
+    .dropdown-content a {
+    color: black;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    }
+    
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+    
+    .danhmuc:hover .dropdown-content {
+    display: block;
+    }
+    
+    .arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    margin-left: 5px;
+    vertical-align: middle;
+    }
+    
+    .menu-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    vertical-align: middle;
+    }
+    
+    .dropdown-content a:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+    
+    .dropdown-content a:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    }
+    
+    .dropdown-item {
+    position: relative;
+    transition: background-color 0.3s;
+    }
+    
+    .dropdown-item:hover {
+    background-color: #f1f1f1;
+    }
+    
+    .dropdown-item > a.main-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    
+    .dropdown-item > a.main-item::after {
+    content: '>';
+    margin-left: auto;
+    }
+    
+    .sub-dropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    }
+    
+    .dropdown-item:hover .sub-dropdown {
+    display: flex;
+    }
+    
+    .sub-dropdown:hover {
+    display: flex;
+    }
+    
+    .sub-dropdown-column {
+    flex: 1;
+    padding: 0 15px;
+    }
+    
+    .sub-dropdown-column:first-child {
+    border-right: 1px solid #e0e0e0;
+    }
+    
+    .sub-dropdown-column h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .sub-dropdown-column a {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+    }
+    
+    .bestsellers {
+    padding-left: 20px;
+    background-color: #F3F4F6;
+    border-radius: 10px;
+    }
+    
+    .bestseller-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: Black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    }
+    
+    .bestseller-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    }
+    
+    .bestseller-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    }
+    
+    .bestseller-info p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    }
+    
+    .bestseller-info .price {
+    font-weight: bold;
+    margin-top: 5px;
+    }
+    
+    .arrow-right {
+    font-size: 18px;
+    margin-left: 5px;
+    }
+    
+    .den {
+    color: black;
+    }
+    
+    .dropdown-item:first-child:hover > a.main-item {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+    
+    .dropdown-item:first-child:hover {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+    
+    .dropdown-content a {
+    justify-content: flex-start;
+    }
+    
+    .menu-icon {
+    flex-shrink: 0;
+    }
+    
+    .sub-dropdown-column.bestsellers a {
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    .sub-dropdown-column.bestsellers a:hover {
+    background-color: #f1f1f1;
+    }
+    
+    .timkiem {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 20px;
+    }
+    
+    .timkiem input {
+    width: 90%;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 24px;
+    background-color: #374151;
+    color: white;
+    font-size: 20px;
+    }
+    
+    .timkiem input::placeholder {
+    color: #9ca3af;
+    font-size: 15px;
+    }
+    
+    .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    }
+    
+    .search-tags {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #374151;
+    border-radius: 0 0 24px 24px;
+    padding: 10px;
+    display: none;
+    width: 90%;
+    }
+    
+    .timkiem:focus-within .search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    }
+    
+    .search-tags a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #4b5563;
+    padding: 5px 10px;
+    border-radius: 12px;
+    }
+    
+    .giohang {
+    display: flex;
+    align-items: center;
+    background-color: #374151;
+    padding: 15px 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    }
+    
+    .cart-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    }
+    
+    .giohang span {
+    color: white;
+    font-size: 20px;
+    }
+    
+    
+
+
+    
+    
+    
+    /* @media (max-width: 768px) {
+        .headercontent {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px 10px;
+        }
+    
+        .logovastudio {
+            order: 2;
+            flex-grow: 0;
+            margin: 0 auto;
+        }
+    
+        .logovastudio img {
+            height: 40px;
+            margin-top:10px
+        }
+    
+        .danhmuc {
+            order: 1;
+            margin: 0;
+            background-color: #111827;
+        }
+    
+        .danhmuc span {
+            font-size: 0;
+            padding: 5px;
+        }
+    
+        .danhmuc span i {
+            font-size: 20px;
+        }
+    
+        .giohang {
+            order: 3;
+            padding: 5px;
+            background-color: #111827;
+            margin-top:15px;
+        }
+    
+        .giohang span {
+            display: none;
+        }
+    
+        .timkiem {
+            order: 4;
+            width: 100%;
+            margin: 10px 0 0 0;
+        }
+    
+        .timkiem input {
+            width: 100%;
+            padding: 10px 40px;
+            font-size: 16px;
+        }
+    
+        .dropdown-content {
+            left: 0;
+        }
+        .search-tags{
+            width: 100%;
+        }
+    
+        .sub-dropdown {
+            min-width: 300px;
+            
+        }
+        .bestsellers{
+            display:none !important;
+        }
+    } */
+  
+
+    @media (max-width: 768px) {
+        .headercontent {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px 10px;
+        }
+    
+        .logovastudio {
+            order: 2;
+            flex-grow: 0;
+            margin: 0 auto;
+        }
+    
+        .logovastudio img {
+            height: 40px;
+            margin-top: 10px;
+        }
+    
+        .danhmuc {
+            order: 1;
+            margin: 0;
+            background-color: #111827;
+        }
+    
+        .danhmuc span {
+            font-size: 0;
+            padding: 5px;
+        }
+    
+        .danhmuc span i {
+            font-size: 20px;
+        }
+    
+        /* Điều chỉnh dropdown cho mobile */
+        .dropdown-content {
+            left: 0;
+            width: 250px;
+        }
+    
+        /* Ẩn sub-dropdown và các phần tử liên quan */
+        .sub-dropdown,
+        .bestsellers,
+        .arrow-right,
+        .dropdown-item > a.main-item::after {
+            display: none !important;
+        }
+    
+        /* Điều chỉnh lại các item trong dropdown */
+        .dropdown-item {
+            width: 100%;
+        }
+    
+        .dropdown-item > a.main-item {
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+    
+        /* Các phần khác giữ nguyên */
+        .giohang {
+            order: 3;
+            padding: 5px;
+            background-color: #111827;
+            margin-top: 15px;
+        }
+    
+        .giohang span {
+            display: none;
+        }
+    
+        .timkiem {
+            order: 4;
+            width: 100%;
+            margin: 10px 0 0 0;
+        }
+    
+        .timkiem input {
+            width: 100%;
+            padding: 10px 40px;
+            font-size: 16px;
+        }
+    
+        .search-tags {
+            width: 100%;
+        }
+    }
+
+
+
+
+
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    color:black;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .giohang{
+    text-decoration: none;
+  }
+
+
+
+
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+#wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+#wrapper:after {
+    content: "";
+    display: block;
+    height: 50px;
+}
+
+footer, #wrapper:after {
+    height: 50px;
+}
+
+footer {
+    background-color: #111827;
+    color: white;
+    width: 100%;
+    position: relative;
+} */
+
+
+
+  

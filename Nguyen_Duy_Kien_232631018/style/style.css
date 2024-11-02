@@ -1,0 +1,418 @@
+.main{
+    font-family: Roboto, sans-serif;
+}
+body{
+    background-color: #F3F4F6;
+}
+.container{
+    width:100%;
+}
+
+/* CSS cho box chuyển ảnh */
+.nenanhchay{
+    background-color: black ;
+    border: 2px solid black;
+    width:100%;
+}
+.anhchayimg{
+    max-width: 100%;
+}
+
+.anhChay {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.image-item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+    text-decoration: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* CSS chung cho trang web */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Thêm media queries nếu cần thiết cho responsive design */
+@media (max-width: 768px) {
+    .anhChay {
+        width: auto;
+        height: 300px;
+    }
+    
+    /* Điều chỉnh các style khác cho màn hình nhỏ nếu cần */
+}
+
+/* CSS cho list san pham */
+.itemSanpham {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f5f5f7;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+.listSanpham {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.boxsp {
+    width: calc(20% - 8px);
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.spham {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #1d1d1f;
+    flex-grow: 1;
+}
+
+.anhSp {
+    width: 40%;
+    max-height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.item-name {
+    font-size: 14px;
+    font-weight: 600;
+    width: 55%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxsp:hover .anhSp {
+    transform: scale(1.3);
+}
+
+@media (max-width: 1024px) {
+    .itemSanpham {
+        width: 95%;
+    }
+    
+    .boxsp {
+        width: calc(25% - 7.5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .boxsp {
+        width: calc(33.33% - 6.67px);
+    }
+}
+
+@media (max-width: 480px) {
+    .boxsp {
+        width: calc(50% - 5px);
+    }
+}
+
+
+
+/* CSS cho box mac */
+.boxmac {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.macImgContainer {
+    width: 100%;
+}
+
+.macImgContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.anhmac{
+    border-radius: 20px;
+}
+
+/* CSS cho box iPhone */
+
+
+
+
+body{
+    background-color: #F3F4F6;
+}
+.boxip{
+    align-items: center;
+    gap:2%; 
+    margin-top: 10%;
+}
+.box15pro{
+    padding: 0;
+}
+.anhbox15pro{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.boxspip2{
+    border: 2px solid blu;
+    gap:2%;
+    
+}
+
+.spip{
+    justify-content: center;
+    align-items: center;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888; 
+    font-size: 13px;
+}
+
+.giaspip{
+    font-size: 20px;
+    font-weight:600;
+}
+
+.discount {
+    color: red;
+    font-size: 10px;
+}
+
+.price-wrapper {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+.muaspip>a{
+    color: white;
+    text-decoration: none;
+   
+}
+.muaspip{
+    
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.process .process_step_title {
+    padding: 25px 8%;
+    padding: 10%;
+    position: relative;
+    
+}
+
+.process .step_process {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.process .title h2 {
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 500;
+    padding: 25px 0 15px;
+}
+
+.process .step {
+    flex: 1 1 300px;
+    /* max-width: 400px; */
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+    min-height: 300px;
+}
+/* Navigation Buttons */
+.button_change {
+    width: 5%;
+    height: 5%;
+}
+
+.left {
+    position: absolute;
+    /* top: 50%; */
+    left: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec;
+    cursor: pointer;
+}
+
+.right {
+    position: absolute;
+    /* top: 50%; */
+    right:4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    cursor: pointer;
+    background-color: #e5e8ec ;
+}
+
+.button_change:hover {
+    background-color: #8d9093;
+}
+
+
+/* .step:hover .anhspip {
+    transform: scale(1.05);
+} */
+
+.anhspip:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.spip>h6{
+    padding-top:15%;
+    font-size:15px;
+}
+.anhspip{
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* het box iphone */
+/* CSS boxmuanhieu */
+.nutmuanhieu{
+    color: black; 
+    font-weight: 500;
+}
+.boxspmuanhieu{
+    gap:2%;
+}
+.spmuanhieu{
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.spmuanhieu>h6{
+    padding-top:15%;
+    font-size:15px;
+}
+.anhspmuanhieu:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.muaphukien{
+    margin-bottom: 5%;
+}
+
+
+/* CSS box sp noi bat*/
+.boxspnoibat{
+    margin-top:5%;
+}
+.tieudenb{
+    padding-bottom: 2%;
+}
+.hang2{
+    margin-top: 2%;
+}
+.anhspnoibat{
+    max-width: 100%;
+    
+}
+.anhspnoibat:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+/* css thong tin khuyen mai */
+.boxnhantin{
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+.tittletin{
+    justify-content: center;
+    text-align: center;
+}
+.boxinput{
+    justify-content: center;
+    display: flex;
+}
+.boxemail{
+    width: 40%;
+}
+.nhapemail{
+    padding-top:1%;
+}
+
+.gui{
+    margin-left:1%;
+}
