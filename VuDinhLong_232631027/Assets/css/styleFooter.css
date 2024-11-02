@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+
+footer {
+    background-color: #1D1D1F;
+    color: white;
+} 
+
+.footer-content{
+    padding-top:3%;  
+    
+}
+.content-footer{
+    gap:20px;
+}
+
+.gioithieu{
+    margin-top:3%;
+    text-align: justify;
+}
+.tongdai{
+    background-color: white;
+    padding: 2%;
+    padding-top:20px;
+    border-radius: 15px;
+    color: black;
+    margin-top: 10%;
+}
+.gachchan{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+.boxgoimuahang{
+    text-align: center;
+}
+.goimuahang{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.hotline{
+    color:cornflowerblue;
+    font-size: 20px;
+}
+
+.boxiconmxh{
+    margin-top:10%;
+    display: flex;
+    gap:20px;
+}
+
+
+.boxfooter>ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.boxfooter>ul>li>a{
+    text-decoration: none;
+    color:#86867D;
+    font-size: 15px;
+}
+.boxfooter>ul>li>a:hover{
+    text-decoration: underline;
+}
+.icon{
+    padding-bottom: 10%;
+}
