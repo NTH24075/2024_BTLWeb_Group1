@@ -1,0 +1,36 @@
+.customer-form-section {
+    background: #fff;
+    padding: 40px 0;
+}
+.customer-form-section .customer-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.customer-form-section .form-group {
+    margin-bottom: 1rem;
+}
+.customer-form-section .error {
+    color: red;
+    font-size: 14px;
+    display: none;
+    margin-top: 5px;
+}
+.customer-form-section #qrCode {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+.customer-form-section #qrCode img {
+    max-width: 200px;
+    height: auto;
+    margin: 15px 0;
+}
+.customer-form-section .radio-group {
+    gap: 15px;
+}
