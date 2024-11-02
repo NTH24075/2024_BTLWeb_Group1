@@ -1,0 +1,628 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+/* Section-one */
+
+.section-one {
+    width: 100%;
+    height: 18%;
+    background-color: rgb(231, 231, 231);
+    /* position: relative; */
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+    /* margin-bottom: 50px; */
+}
+.iPad_tp {
+    height: 100%;
+    width: 100px;
+    float: left;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 10%;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+}
+.section-one .iPad_tp img{
+    vertical-align: middle;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    border-radius: 10%;
+    padding-bottom: 2px;
+}
+.section-one .iPad_tp a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+.section-one .iPad_tp:hover{
+    background-color:#C7C7C7 ;
+}
+.section-one .iPad_tp a:hover{
+    color: #187BDF;
+}
+/*End Section-one */
+
+/* Section-two */
+.section-two{
+    padding: 50px 0;
+}
+.section-two {
+    padding: 20px 0;
+}
+.section-two .inner-header{
+margin: 50px;
+}        
+.left-header h1 {
+    font-size: 5rem; /* 80px */
+}
+
+.right-header h3 {
+    font-size: 1.75rem; /* 28px */
+}
+
+.welcome-video {
+    width: 100%;
+}
+
+/* Media queries for responsive text */
+@media (max-width: 992px) {
+    .left-header h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-header h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .right-header h3 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .left-header h1 {
+        font-size: 2.5rem;
+    }
+    .right-header h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.welcome-video-video {
+    object-fit: cover;
+    position: relative;
+    left: 0;
+}
+.section-two video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 85vw;
+    height: auto;
+    border-radius: 50px;
+}
+.section-two .video{
+    width: 100%;
+    /* padding: 0 auto; */
+    text-align: center;
+}
+/*End Section-two */
+
+/* Section-three */
+.section-three .slider-container .slider{
+    width: 100%;
+}
+.slider-container .slider .Slide{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-bottom: 34.25%; /* Tỷ lệ 16:9 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+}
+.slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Custom arrows */
+.slick-prev, .slick-next {
+    z-index: 1;
+    width: 40px;
+    height: 50px;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+/* Responsive settings */
+@media (max-width: 768px) {
+    .slider-container {
+        padding: 10px;
+    }
+    
+    .slick-prev, .slick-next {
+        width: 30px;
+        height: 30px;
+    }
+}
+/* End Section-three */
+
+/* Choose iPad */
+.choose-ipad{
+    padding: 150px 0;
+    /* background-color: #F5F5F7; */
+}
+.choose-ipad .inner-choose{
+    text-align: center;
+}
+.choose-ipad .inner-choose h2{
+    font-size: 35px;
+}
+.choose-ipad .inner-choose a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.inner-choose a:hover{
+    color: #187BDF;
+}
+/*End Choose iPad */
+
+/* Section-four */
+.section-four{
+    background-color: #F5F5F7;
+    padding: 3%;
+}
+.section-four .container{
+    width: 100%;
+}
+.section-four .tag-card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+    padding: 15px 10px 0px 0px;
+    color: #0066CC;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 0.5rem;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); */
+}
+.product-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1.0);   
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
+.product-card h5{
+    font-weight: bold;
+}
+.product-card h5,.price,.old-price,.discount{
+    display: flex;
+    justify-content: flex-start;
+}
+.product-card .price {
+    color: #0066CC;
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 16px;
+}
+.product-card .discount {
+    color: #888;
+    font-size: 16px;
+}
+.load-more-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: auto;
+    margin: 10px auto;
+    margin-bottom:25px ;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid #1d1b1b;
+    border-radius: 15px;
+    color: #000;
+    text-decoration: none;
+}
+.section-four .row{
+    padding: 0 5%;
+}
+.section-four .product-card h5{
+    font-size: 14px;
+}
+
+/*End Section-four */
+
+/* Modal Section-four   */
+/* iPhone 16 */
+/* .cards {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+} */
+.storage-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.storage-btn {
+    padding: 8px 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.storage-btn:hover {
+    border-color: #0071e3;
+    background: #f5f5f5;
+}
+
+.storage-btn.active {
+    border-color: #0071e3;
+    background: #0071e3;
+    color: white;
+}
+
+.options {
+    margin: 15px 0;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.modal {
+    display: none; /* Ẩn modal ban đầu */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px;
+    max-height: 80vh; /* Giới hạn chiều cao tối đa */
+    overflow-y: auto; /* Thêm thanh cuộn khi nội dung quá dài */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.modal h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.modal p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+.options {
+    margin: 10px 0;
+}
+.options label {
+    margin-right: 10px;
+}
+.color-options {
+    display: flex;
+    margin-top: 10px;
+}
+.color-options div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.button-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.add-to-cart {
+    background-color: #007bff;
+}
+.buy-now {
+    background-color: #28a745;
+}
+.notification {
+    display: none; /* Ẩn thông báo ban đầu */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1001;
+}
+
+
+/*End Modal Section-four   */
+
+/* Phụ kiện thiết yếu cho iPad   */
+.ipad-accessories .title {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ipad-accessories .card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Đảm bảo card có chiều cao 100% */
+    display: flex;
+    flex-direction: column;
+}
+
+.ipad-accessories .card-body {
+    text-align: center;
+    padding: 20px;
+    flex: 0 0 auto; /* Không cho phép card-body co giãn */
+}
+
+.ipad-accessories .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ipad-accessories .card-text {
+    font-size: 17px;
+    font-weight: 500;
+    color: #1D1D1F;
+    margin-bottom: 20px;
+}
+
+.ipad-accessories .card-link {
+    font-size: 17px;
+    color: #0071e3;
+    text-decoration: none;
+}
+
+.ipad-accessories .row {
+    padding: 0 10%;
+}
+
+.ipad-accessories .accessories img {
+    height: auto;
+    width: 80%;
+    display: block;
+    margin: 0;
+}
+
+.ipad-accessories .accessories .card .card-img {
+    flex: 1; /* Cho phép card-img lấp đầy không gian còn lại */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.ipad-accessories .accessories .card h5{
+    font-size: 28px;
+}
+.ipad-accessories .accessories {
+    display: flex;
+    margin-bottom: 24px;
+}
+/*End Phụ kiện thiết yếu cho iPad   */
+
+/* Section-five */
+.section-five{
+    padding: 50px 0;
+    background-color: #f5f5f7;
+}
+.section-five h2{
+    padding: 50px;
+    text-align: center;
+    font-size: 48px;
+}
+.section-five .cards{
+    width: 30%;
+    margin: 15px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 35px;
+}
+.section-five .cards .icon{
+    padding: 30px 0px 30px 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.section-five .icon i{
+    font-size: 35px;
+}
+.section-five h5{
+    font-size: 20px;
+}
+.section-five .sub-title{
+    font-size: 15px;
+}
+
+/*End Section-five */
+
+/* Section-six */
+.section-six{
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 65px 60px 60px 60px;
+}
+.section-six h2{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.section-six .row div{
+    /* background-color: #28a745; */
+}
+.section-six .row img{
+    max-width: 100%;
+    height: auto;
+}
+.section-six .row .icons{
+    text-align: center;
+}
+.section-six .row{
+    padding: 15px;
+    margin: 0 20%;
+}
+.section-six .row a{
+    text-decoration: none;
+    color: #000;
+}
+.section-six .row a:hover{
+    color: #0077ED;
+}
+/* End Section-six */
+
+/* Foster  */
+footer {
+    background-color: #1D1D1F;
+    color: white;
+    
+    /* position: relative; */
+} 
+
+.footer-content{
+    padding-top:3%;  
+    
+}
+.content-footer{
+    gap:20px;
+}
+
+/* .boxfooter{
+    
+} */
+.gioithieu{
+    margin-top:3%;
+    text-align: justify;
+}
+.tongdai{
+    background-color: white;
+    padding: 2%;
+    padding-top:20px;
+    border-radius: 15px;
+    color: black;
+    margin-top: 10%;
+}
+.gachchan{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+.boxgoimuahang{
+    text-align: center;
+}
+.goimuahang{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.hotline{
+    color:cornflowerblue;
+    font-size: 20px;
+}
+
+.boxiconmxh{
+    margin-top:10%;
+    display: flex;
+    gap:20px;
+}
+
+
+.boxfooter>ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.boxfooter>ul>li>a{
+    text-decoration: none;
+    color:#86867D;
+    font-size: 15px;
+}
+.boxfooter>ul>li>a:hover{
+    text-decoration: underline;
+}
+.icon{
+    padding-bottom: 10%;
+}
+/* End Foster  */
