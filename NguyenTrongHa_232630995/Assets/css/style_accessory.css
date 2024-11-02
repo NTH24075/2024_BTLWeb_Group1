@@ -1,0 +1,849 @@
+* {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+.hidden{
+    display: none !important;
+}
+/*begin banner*/
+.banner{
+    width: 100%;
+    overflow: hidden;
+    background-color: #F5F5F7;
+}
+.banner .fa-solid {
+    height: 10px;
+    width: 10px;
+    display: inline;
+    color: blue;
+}
+.banner .content{
+    align-items: center;
+    padding-top: 50px;
+}
+.banner .content h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.banner .content p{
+    font-size: 15px;
+}
+.banner .content a{
+    font-size: 15px;
+}
+/*end banner*/
+/*begin find items*/
+.find_items .title,.box_find{
+    justify-content: center;
+    text-align: center;
+}
+.find_items .title{
+    padding-top: 70px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.find_items .find{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 3.3rem;
+
+}
+.find_items .box_find input{
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+
+
+}
+/*end find items*/
+/* begin list products*/
+.list_product{
+    margin-top: 1em;
+}
+.list_product .title{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.genre{
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.object_selection{
+    border-top: 1px solid #00000042;
+    /* border-bottom: 1px solid #00000042; */
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.object_selection a{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.732);
+}
+.object{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.object label{
+    display: flex;
+    justify-content: center;
+    
+}
+.object .logo_obj{
+    box-sizing: content-box;
+    display: flex;
+    border: 1px solid #d2d2d7;
+    border-radius: 50%;
+    max-width: 75px;
+    max-height: 75px;
+    padding: 30px;
+    justify-content: center;
+    
+}
+.object .logo_obj img{
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+}
+.object:hover{
+    a{
+    color: #1472D0;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    }
+}
+
+/* end list products*/
+/* begin list_genre*/
+.list_genre .title{
+    margin: auto;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+.genre .object {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.genre .object.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.button_extra, .button_none {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+}
+.button_extra.hidden, .button_none.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.list_genre .object{
+    margin-top: 10px;
+}
+
+/* end list_genre*/
+/* begin icon down*/
+.button_extra{
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.fa-chevron-down{
+    border: 1px solid rgb(255, 250, 250);
+    padding: 15px;
+    border-radius: 50%;
+    background-color:#e0e1e2;
+    
+}
+.fa-chevron-down:hover{
+    background-color: #d2d2d7;
+}
+/* end icon down*/
+/* begin icon up*/
+.button_none{
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+/* end icon up*/
+/* begin prominents*/
+.prominents{
+    margin-top: 2em;
+    padding: 25px 8%;
+    position: relative;
+}
+.prominents .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+.prominents .step{
+    background-color: #F5F5F7;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.prominents .step img{
+    box-sizing: content-box;
+    height: 291px;
+    width: 266px;
+
+}
+.prominents .step a{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.807);
+}
+.step:hover {
+    a{
+        color: #1472D0;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+}
+.prominents .step p{
+    font-weight: 500;
+    opacity: 0.5;
+}
+.button_change {
+    width: 5%;
+    height: 5%;
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec;
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec ;
+}
+
+.button_change:hover {
+    background-color: #8d9093;
+}
+/*/////*/
+/* watch*/
+.prominents_watch{
+    margin-top: 2em;
+    padding: 25px 8%;
+    position: relative;
+}
+.prominents_watch .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+.prominents_watch .step_watch{
+    background-color: #F5F5F7;
+    text-align: center;
+    border-radius: 20px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.prominents_watch .step_watch img{
+    box-sizing: content-box;
+    height: 291px;
+    width: 266px;
+
+}
+.prominents_watch .step_watch a{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.807);
+}
+.step_watch:hover {
+    a{
+        color: #1472D0;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+}
+.prominents_watch .step_watch p{
+    font-weight: 500;
+    opacity: 0.5;
+}
+/* end prominents*/
+
+.button_change_watch {
+    width: 5%;
+    height: 5%;
+}
+
+.left_watch {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec;
+}
+
+.right_watch {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec ;
+}
+
+.button_change_watch:hover {
+    background-color: #8d9093;
+}
+/* end watch*/
+/* audio*/
+.prominents_audio{
+    margin-top: 2em;
+    padding: 25px 8%;
+    position: relative;
+}
+.prominents_audio .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+.prominents_audio .step_audio{
+    background-color: #F5F5F7;
+    text-align: center;
+    border-radius: 20px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.prominents_audio .step_audio img{
+    box-sizing: content-box;
+    height: 291px;
+    width: 266px;
+
+}
+.prominents_audio .step_audio a{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.807);
+}
+.step_audio:hover {
+    a{
+        color: #1472D0;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+}
+.prominents_audio .step_audio p{
+    font-weight: 500;
+    opacity: 0.5;
+}
+/* end prominents*/
+
+.button_change_audio {
+    width: 5%;
+    height: 5%;
+}
+
+.left_audio {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec;
+}
+
+.right_audio {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec ;
+}
+
+.button_change_audio:hover {
+    background-color: #8d9093;
+}
+/* end audio*/
+/* ipad*/
+.prominents_ipad{
+    margin-top: 2em;
+    padding: 25px 8%;
+    position: relative;
+}
+.prominents_ipad .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+.prominents_ipad .step_ipad{
+    background-color: #F5F5F7;
+    text-align: center;
+    border-radius: 20px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.prominents_ipad .step_ipad img{
+    box-sizing: content-box;
+    height: 291px;
+    width: 266px;
+}
+.prominents_ipad .step_ipad a{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.807);
+}
+.step_ipad:hover {
+    a{
+        color: #1472D0;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+}
+.prominents_ipad .step_ipad p{
+    font-weight: 500;
+    opacity: 0.5;
+}
+/* end prominents*/
+
+.button_change_ipad {
+    width: 5%;
+    height: 5%;
+}
+
+.left_ipad {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec;
+}
+
+.right_ipad {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec ;
+}
+
+.button_change_ipad:hover {
+    background-color: #8d9093;
+}
+
+/* end ipad*/
+/* mac*/
+.prominents_mac {
+    margin-top: 2em;
+    padding: 25px 8%;
+    position: relative;
+}
+.prominents_mac .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+.prominents_mac .step_mac {
+    background-color: #F5F5F7;
+    text-align: center;
+    border-radius: 20px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.prominents_mac .step_mac img {
+    box-sizing: content-box;
+    height: 291px;
+    width: 266px;
+}
+.prominents_mac .step_mac a {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.807);
+}
+.step_mac:hover {
+    a {
+        color: #1472D0;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+}
+.prominents_mac .step_mac p {
+    font-weight: 500;
+    opacity: 0.5;
+}
+/* end prominents */
+
+.button_change_mac {
+    width: 5%;
+    height: 5%;
+}
+
+.left_mac {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec;
+}
+
+.right_mac {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 1px solid #e5e8ec;
+    background-color: #e5e8ec;
+}
+
+.button_change_mac:hover {
+    background-color: #8d9093;
+}
+
+/* end mac*/
+/* Airtag*/
+.prominents_airtag {
+    margin-top: 2em;
+    padding: 25px 8%;
+    position: relative;
+}
+.prominents_airtag .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+.prominents_airtag .step_airtag {
+    background-color: #F5F5F7;
+    text-align: center;
+    border-radius: 20px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.prominents_airtag .step_airtag img {
+    box-sizing: content-box;
+    height: 291px;
+    width: 266px;
+}
+.prominents_airtag .step_airtag a {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.807);
+}
+.step_airtag:hover {
+    a {
+        color: #1472D0;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+}
+.prominents_airtag .step_airtag p {
+    font-weight: 500;
+    opacity: 0.5;
+}
+.booking {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.img_booking {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.content_booking {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    width: 90%;
+    max-width: 600px;
+}
+
+.content_booking h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 500;
+}
+
+.content_booking p {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+
+.content_booking .button_booking {
+    background-color: #0066CC;
+    padding: clamp(8px, 2vw, 10px) clamp(20px, 4vw, 40px);
+    font-size: clamp(18px, 3vw, 30px);
+    font-weight: 400;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    opacity: 0.9;
+    transition: background-color 0.3s ease;
+}
+
+.button_booking:hover {
+    background-color: #0c5094;
+    opacity: 1;
+}
+.modal-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+.left-section {
+    flex: 1;
+    padding: 0px;
+    border-right: 1px solid #ddd;
+}
+.left-section img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+.right-section {
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+}
+.right-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.right-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+.form-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.form-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.form-container .row .form-control {
+    width: 100%;
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-container button:hover {
+    background-color: #555;
+}
+/* alert */
+.form-message {
+    position: fixed;
+    top: 84px;
+    right: 20px;
+    display: flex;
+    align-items: stretch;
+    border-radius: 6px;
+    width: 360px;
+    overflow: hidden;
+    border: 1px solid ;
+    font-size: 1.4rem;
+    transform: translateX(400px);
+    transition: 0.3s ease;
+    opacity: 0;
+    z-index: 20;
+}
+.message-show {
+    transform: translateX(0);
+    opacity: 1;
+}
+.form-message.success {
+    background-color: #eaf7ee;
+    border-color: #3fbf62;
+}
+
+.form-message.fail {
+    background-color: #fcede9;
+    border-color: #ea4e2c;
+}
+
+.form-message.success .fa-circle-check {
+    color: #3fbf62;
+    border-color: #3fbf62;
+}
+
+.form-message.fail .fa-circle-check {
+    color: #ea4e2c;
+    border-color: #ea4e2c;
+}
+.message-icon {
+    border-left: 4px solid;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.message-text {
+    flex: 1;
+    padding: 15px 10px;
+}
+
+.message-text>h3 {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+.message-text>p{
+    text-align:left ;
+    font-size: 15px;margin-bottom:0;
+    
+}
+
+/* Bootstrap Grid System Helpers */
+@media (max-width: 768px) {
+    .banner img{
+        width: 130%;
+
+    }
+    .information p{
+        margin-bottom: 0.5rem;
+    }
+    a.link_container{
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    .information p{
+        font-size: 10px;
+    }
+    h1.title{
+        margin-top: 10px;
+    }
+    .step{
+        max-height: 300px;
+        min-width: 100%;
+        height: 80%;
+        
+    }
+    .button_change{
+        display: none;
+    }
+    .content_booking h2 {
+        font-size: clamp(11px, 4vw, 40px);
+        font-weight: 400;
+    }
+    
+    .content_booking p {
+        font-size: clamp(7px, 3vw, 25px);
+        font-weight: 200;
+        margin-bottom: 5%;
+    }
+    .content_booking .button_booking {
+        padding: clamp(8px, 2vw, 10px) clamp(20px, 4vw, 40px);
+        font-size: clamp(15px, 3vw, 30px);
+        font-weight: 400;
+        border-radius: 10px;
+    }
+    .left-section{
+        display: none;
+    }
+    .form-message {
+        width: 260px;
+    }
+    .message-text>h3 {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .message-text>p{
+        text-align:left ;
+        font-size: 10px;margin-bottom:0;
+        
+    }
+    .step,.step_watch,.step_audio,.step_ipad,.step_mac,.step_airtag{
+        height: 400px !important;
+        padding: 0 !important;
+    }
+}
+
