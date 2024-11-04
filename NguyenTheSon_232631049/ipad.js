@@ -124,8 +124,5 @@ function selectStorage(button, storage) {
     // Thêm class 'active' cho nút được chọn
     button.classList.add('active');
     
-    // Lưu giá trị dung lượng được chọn vào biến
-    const selectedStorage = storage;
-    // In ra console để kiểm tra
-    console.log('Đã chọn dung lượng:', selectedStorage);
+    
 }
